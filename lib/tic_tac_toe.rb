@@ -55,7 +55,7 @@ while true
 
 
     # command will store the users command
-    # command = _______
+    command = gets.chomp
 
     if command == "quit"
         # exit the loop
@@ -64,13 +64,13 @@ while true
         # command should look something like 0,2
 
         # parse the command, so that position is an array like [0, 2]
-        # position = command.________
+        position = command.split(',')
 
         # extract the row and column
-        # row = position[____]
-        # column = position[____]
+        row = position[0]
+        column = position[1]
 
         # now change the board to reflect the user's move
-        # change_board(______________)
+        board = change_board(board, row, column, current_player)
     end
 end
