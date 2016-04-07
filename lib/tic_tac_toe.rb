@@ -39,12 +39,9 @@ board = [
         ]
 
 
-
+current_player = "X"
 # Let's make a loop to take in input from the user
 while true
-
-    # set the current player
-    current_player = "X"
     # draw the board
     puts draw_board(board)
 
@@ -72,5 +69,14 @@ while true
 
         # now change the board to reflect the user's move
         board = change_board(board, row, column, current_player)
+
+        # now we need to switch the current player so that we are playing
+        # as the correct player the next time we go through the loop
+
+        if current_player == "X"
+             current_player = "O"
+        else
+             current_player = "X"
+        end
     end
 end
