@@ -81,3 +81,7 @@ while true
         end
     end
 end
+
+# Once you're done you can play tic tac toe by running the program in the shell
+# with the following command:
+# ruby lib/tic_tac_toe.rb
