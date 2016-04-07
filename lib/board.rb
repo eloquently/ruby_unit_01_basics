@@ -16,7 +16,7 @@ def change_board(board, row, col, player)
     # Since the user enters the row and column values, we need to make sure
     # they are valid (i.e. between 0 and 2)
     # if ______ or ______ or ______ or _______
-        # raise IllegalArgumentException
+        # raise _______
     # end
 
     # before we place a piece, we need to make sure it isn't already taken
@@ -24,7 +24,7 @@ def change_board(board, row, col, player)
         # uncomment the next line and fill in the blanks:
         # new_board[____][____] = _____
     # else
-        # raise IllegalArgumentException('Space already occupied')
+        # raise ArgumentError.new('Space already occupied')
     # end
 
     return new_board
