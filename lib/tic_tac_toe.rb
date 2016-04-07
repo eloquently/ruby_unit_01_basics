@@ -29,7 +29,7 @@
 # We're going to build a tic-tac-toe command line app.
 # We've outlined the code and you just need to fill in the blanks
 
-require 'board'
+require_relative './board'
 
 # create an empty board to start with
 board = [
@@ -64,8 +64,9 @@ while true
         position = command.split(',')
 
         # extract the row and column
-        row = position[0]
-        column = position[1]
+        row = position[0].to_i
+        column = position[1].to_i
+
 
         # now change the board to reflect the user's move
         board = change_board(board, row, column, current_player)
