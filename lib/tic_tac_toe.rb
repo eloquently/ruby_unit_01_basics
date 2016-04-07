@@ -29,7 +29,7 @@
 # We're going to build a tic-tac-toe command line app.
 # We've outlined the code and you just need to fill in the blanks
 
-require 'board'
+require_relative './board'
 
 # create an empty board to start with
 board = [
@@ -63,9 +63,9 @@ while true
         # parse the command, so that position is an array like [0, 2]
         # position = command.________
 
-        # extract the row and column
-        # row = position[____]
-        # column = position[____]
+        # extract the row and column and convert them to integers from strings
+        # row = position[____].to_i
+        # column = position[____].to_i
 
         # now change the board to reflect the user's move
         # change_board(______________)
