@@ -84,3 +84,9 @@ end
 # Once you're done you can play tic tac toe by running the program in the shell
 # with the following command:
 # ruby lib/tic_tac_toe.rb
+
+# For bonus points, try dealing with the exceptions you raise in the change_board
+# method when a move is invalid or the row/column is out of range
+
+# We will write a method to check the winner when we talk about data structures
+# a few days from now
