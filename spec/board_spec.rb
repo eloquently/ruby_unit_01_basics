@@ -23,19 +23,19 @@ describe "board.rb" do
         end
 
         it 'raises expection if row is too low' do
-            expect { change_board(board, -1, 0, 'X') }.to raise_exception
+            expect { change_board(board, -1, 0, 'X') }.to raise_error(IllegalArgumentException)
         end
 
         it 'raises expection if row is too high' do
-            expect { change_board(board, 3, 0, 'X') }.to raise_exception
+            expect { change_board(board, 3, 0, 'X') }.to raise_error(IllegalArgumentException)
         end
 
         it 'raises expection if col is too low' do
-            expect { change_board(board, 0, -1, 'X') }.to raise_exception
+            expect { change_board(board, 0, -1, 'X') }.to raise_error(IllegalArgumentException)
         end
 
         it 'raises expection if col is too high' do
-            expect { change_board(board, 0, 3, 'X') }.to raise_exception
+            expect { change_board(board, 0, 3, 'X') }.to raise_error(IllegalArgumentException)
         end
     end
 end
