@@ -82,7 +82,7 @@ while true
         # implement the change_board method in the board.rb file and fill in
         # the parameters here.
 
-        # change_board(______________)
+        # board = change_board(______________)
 
         # notice that we could have placed all the code for the change_board
         # method here. However, we don't do that for a few reasons:
